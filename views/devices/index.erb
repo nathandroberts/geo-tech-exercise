@@ -1,0 +1,8 @@
+<h1>Home Page</h1>
+<h2><%= @title %></h2>
+<a href="/">Home</a>
+<% (0..(@name_data.length-2)).each do |n| %>
+  <a href="/devices/<%=@name_data[n]  %>"><h3><%=@name_data[n]%></h3>
+      </a>
+  <p><%= @notes_data[n] %></p>
+<% end %>

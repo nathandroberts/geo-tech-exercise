@@ -1,0 +1,9 @@
+<h1>Search Results</h1>
+<a href="/">Home</a>
+
+<% @name_data.each do |data| %>
+  <% if data.include?(@name_input) %>
+    <h3><%= data[0] %> <%=  %></h3>
+    <p><%= data[1] %></p>
+  <% end %>
+<% end %>

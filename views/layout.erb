@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Geo tech exercise</title>
+  </head>
+  <body>
+    <div class="container">
+      <form  action="/search" method="get">
+      <div class="input-group">
+        <input required type="text" placeholder="Search" name="device_search">
+        <div>
+          <button type="submit">
+            <p>submit</p>
+          </button>
+        </div>
+      </div>
+    </form>
+      <%= yield %>
+    </div>
+  </body>
+</html>
